@@ -1,1 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+.scrollbar-hide {
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none; /* Para IE y Edge */
+  }
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Para Chrome, Safari y Opera */
+  }
+.product-gallery img {
+    transition: all .25s ease;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.product-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,.18);
+}
+.buy-btn{
+    box-shadow:0 6px 15px rgba(37,99,235,.25);
+}
+.buy-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+    box-shadow:0 14px 28px rgba(37,99,235,.35);
+}
+.buy-btn:active{
+    transform:translateY(0);
+}
+/* ---------- Miniaturas ---------- */
+
+.thumb-item{
+    transition:all .25s ease;
+    background:#fff;
+    border:1px solid #dbe3ef;
+}
+.thumb-item:hover{
+    transform:translateY(-4px);
+    border-color:#2563eb;
+    box-shadow:0 10px 22px rgba(0,0,0,.12);
+}
+.thumb-item img{
+    transition:transform .25s ease;
+}
+.thumb-item:hover img{
+    transform:scale(1.08);
+}
+.bg-gray-50{
+    transition: all .25s ease;
+}
+.bg-gray-50:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+}
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:24px;
+}
+.why-grid div{
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+    border-radius:18px;
+    padding:28px;
+    transition:all .3s ease;
+    box-shadow:0 6px 20px rgba(0,0,0,.05);
+}
+.why-grid div:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+    border-color:#2563eb;
+}
+.why-grid h3{
+    font-size:20px;
+    font-weight:700;
+    color:#0D274D;
+    margin-bottom:10px;
+}
+.why-grid p{
+    color:#64748b;
+    line-height:1.7;
+}
+#img_main{
+    transition: transform .3s ease;
+}
+#img_main:hover{
+    transform: scale(1.04);
+}
